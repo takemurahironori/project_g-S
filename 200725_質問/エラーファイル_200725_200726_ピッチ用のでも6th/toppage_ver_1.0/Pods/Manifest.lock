@@ -1,0 +1,29 @@
+PODS:
+  - GoogleMaps (3.9.0):
+    - GoogleMaps/Maps (= 3.9.0)
+  - GoogleMaps/Base (3.9.0)
+  - GoogleMaps/Maps (3.9.0):
+    - GoogleMaps/Base
+  - GooglePlaces (3.9.0):
+    - GoogleMaps/Base (= 3.9.0)
+  - TimelineTableViewCell (2.2.1)
+
+DEPENDENCIES:
+  - GoogleMaps
+  - GooglePlaces
+  - TimelineTableViewCell
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - GoogleMaps
+    - GooglePlaces
+    - TimelineTableViewCell
+
+SPEC CHECKSUMS:
+  GoogleMaps: 4b5346bddfe6911bb89155d43c903020170523ac
+  GooglePlaces: 1634d019549b969d40fe0ccb0b9513055adebe01
+  TimelineTableViewCell: b2721a3c1f17c4a4950ae442f45cd4e8669a2750
+
+PODFILE CHECKSUM: fb31b1cfe22f281621e0b50b5182c8f26c460dca
+
+COCOAPODS: 1.9.3
