@@ -1,0 +1,6 @@
+framework module Pods_toppage_ver_1_0 {
+  umbrella header "Pods-toppage_ver_1.0-umbrella.h"
+
+  export *
+  module * { export * }
+}
