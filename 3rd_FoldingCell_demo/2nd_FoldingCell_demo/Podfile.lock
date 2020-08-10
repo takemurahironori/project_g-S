@@ -1,0 +1,16 @@
+PODS:
+  - FoldingCell (5.0.2)
+
+DEPENDENCIES:
+  - FoldingCell
+
+SPEC REPOS:
+  trunk:
+    - FoldingCell
+
+SPEC CHECKSUMS:
+  FoldingCell: f92eb5fb9842319e7cd08c71533c98408b785099
+
+PODFILE CHECKSUM: f8d8cc1dc0bb47a59ecd84611999b8b32296aad8
+
+COCOAPODS: 1.9.3
