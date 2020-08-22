@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="customTableViewCell" rowHeight="133" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="_00815_Integration" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="133"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="335" height="133"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="editorpick" translatesAutoresizingMaskIntoConstraints="NO" id="2hi-md-gwm">
+                        <rect key="frame" x="0.0" y="0.0" width="335" height="133"/>
+                    </imageView>
+                    <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jnO-bh-o8J">
+                        <rect key="frame" x="0.0" y="0.0" width="335" height="133"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBt-to-eZV">
+                        <rect key="frame" x="120" y="15" width="215" height="33"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="proficon" translatesAutoresizingMaskIntoConstraints="NO" id="1HT-VS-1P8">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="0Ds-WB-9sV"/>
+                            <constraint firstAttribute="height" constant="100" id="CcR-Dt-r6w"/>
+                        </constraints>
+                    </imageView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TYy-cZ-KUD">
+                        <rect key="frame" x="120" y="60" width="215" height="73"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Lorem ipsum dolor sit er elit lamet, consectetaur ">
+                                <attributes>
+                                    <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="NSFont" metaFont="menu" size="14"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="TYy-cZ-KUD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="120" id="199-nw-zqE"/>
+                    <constraint firstItem="1HT-VS-1P8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1Tu-I7-hff"/>
+                    <constraint firstItem="2hi-md-gwm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="5pk-gK-xdx"/>
+                    <constraint firstItem="1HT-VS-1P8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="8b3-Pd-Iu8"/>
+                    <constraint firstAttribute="bottom" secondItem="2hi-md-gwm" secondAttribute="bottom" id="CTW-ab-thI"/>
+                    <constraint firstAttribute="trailing" secondItem="TYy-cZ-KUD" secondAttribute="trailing" id="DLB-08-HKF"/>
+                    <constraint firstAttribute="trailing" secondItem="jnO-bh-o8J" secondAttribute="trailing" id="EwC-Lp-Zx9"/>
+                    <constraint firstAttribute="trailing" secondItem="XBt-to-eZV" secondAttribute="trailing" id="MKX-th-FAK"/>
+                    <constraint firstItem="TYy-cZ-KUD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="60" id="McS-Kf-aet"/>
+                    <constraint firstItem="jnO-bh-o8J" firstAttribute="leading" secondItem="2hi-md-gwm" secondAttribute="leading" id="N5e-NT-7vu"/>
+                    <constraint firstAttribute="trailing" secondItem="2hi-md-gwm" secondAttribute="trailing" id="Wbe-vM-u8D"/>
+                    <constraint firstItem="2hi-md-gwm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Zvi-iV-eao"/>
+                    <constraint firstItem="XBt-to-eZV" firstAttribute="leading" secondItem="1HT-VS-1P8" secondAttribute="trailing" constant="20" id="cjk-V1-FRs"/>
+                    <constraint firstItem="XBt-to-eZV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="hhp-sf-VTC"/>
+                    <constraint firstAttribute="bottom" secondItem="TYy-cZ-KUD" secondAttribute="bottom" id="jBI-hx-kJn"/>
+                    <constraint firstItem="jnO-bh-o8J" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="nII-8A-8Si"/>
+                    <constraint firstAttribute="bottom" secondItem="jnO-bh-o8J" secondAttribute="bottom" id="vsS-Es-0As"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="articledetail" destination="TYy-cZ-KUD" id="jcw-T1-Qhn"/>
+                <outlet property="icon" destination="1HT-VS-1P8" id="Phr-tf-039"/>
+                <outlet property="title" destination="XBt-to-eZV" id="tXx-r2-3Io"/>
+            </connections>
+            <point key="canvasLocation" x="148.55072463768118" y="166.40625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="editorpick" width="1280" height="853"/>
+        <image name="proficon" width="568" height="568"/>
+    </resources>
+</document>

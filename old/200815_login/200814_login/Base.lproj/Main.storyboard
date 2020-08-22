@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_00814_login" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80T-GC-nCX">
+                                <rect key="frame" x="20" y="487" width="335" height="32"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="会員登録/ログイン">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWt-7j-a9D">
+                                <rect key="frame" x="0.0" y="265" width="375" height="24"/>
+                                <string key="text">会員登録/ログインすると？
+</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="毎月の届くウイスキーの情報や呑み方・味の違いなど、ウイスキーを楽しむコンテンツをお楽しみいたけます。" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oed-q4-VSe">
+                                <rect key="frame" x="20" y="299" width="335" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="DCc-vq-uyx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="whz-NS-wsj">
+                                <rect key="frame" x="60" y="30" width="255" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Q1e-75-KCH"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="whz-NS-wsj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="1tf-kt-Q0M"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Oed-q4-VSe" secondAttribute="trailing" constant="20" id="LrR-zM-Aqd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="80T-GC-nCX" secondAttribute="trailing" constant="20" id="MV1-MQ-yUr"/>
+                            <constraint firstItem="80T-GC-nCX" firstAttribute="top" secondItem="Oed-q4-VSe" secondAttribute="bottom" constant="108" id="My8-8j-PVx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qWt-7j-a9D" secondAttribute="trailing" id="N7U-hP-FTm"/>
+                            <constraint firstItem="qWt-7j-a9D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RZY-lM-vfK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="whz-NS-wsj" secondAttribute="trailing" constant="60" id="W6Z-8q-yN8"/>
+                            <constraint firstItem="qWt-7j-a9D" firstAttribute="top" secondItem="whz-NS-wsj" secondAttribute="bottom" constant="85" id="YUM-CL-JyM"/>
+                            <constraint firstItem="Oed-q4-VSe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="epc-8v-ev3"/>
+                            <constraint firstItem="Oed-q4-VSe" firstAttribute="top" secondItem="qWt-7j-a9D" secondAttribute="bottom" constant="10" id="jXJ-8G-XqR"/>
+                            <constraint firstItem="80T-GC-nCX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ojv-JK-EEa"/>
+                            <constraint firstItem="qWt-7j-a9D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xOu-k4-dTa"/>
+                            <constraint firstItem="whz-NS-wsj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="zNA-rG-v2Q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="authButton" destination="80T-GC-nCX" id="anB-Ed-14y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="126.38680659670166"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="4987" height="3325"/>
+    </resources>
+</document>
